@@ -3,12 +3,10 @@ services:
     image: postgres
     container_name: fieldsync_postgres
     restart: always
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: charizard2025
-      POSTGRES_DB: fieldsync_db
+    env_file:
+      - .env
     ports:
-      - "5432:5432"
+      - "${POSTGRES_PORT}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 

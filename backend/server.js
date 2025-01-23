@@ -2,6 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors"; 
 import pkg from "pg";
+import dotenv from "dotenv"; 
+
+dotenv.config(); 
 
 const { Pool } = pkg;
 
@@ -14,11 +17,11 @@ app.use(cors());
 
 // postgres db connection 
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost", 
-    database: "fieldsync_db",
-    password: "charizard2025",
-    port: 5432, 
+    user: process.env.POSTGRES_USER,
+    host: process.env.POSTGRES_HOST,
+    database: process.env.POSTGRES_DB,
+    password: process.env.POSTGRES_PASSWORD,
+    port: process.env.POSTGRES_PORT, 
 });
 app.get("/fetch", async (req,res)=>{
     try {
