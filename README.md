@@ -143,5 +143,11 @@ fieldsync-fullstack-app/
     README.md 
 ```
 
-This should help you with the formatting of your README file.
+### Future Updates:
+   add resources section to include db/migration setup.sql file
+   host to aws 
+   implement ci/cd for updates
+
+I enjoyed this app even if time consuming at times. 
+   
 
