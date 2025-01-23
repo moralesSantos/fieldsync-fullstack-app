@@ -1,0 +1,28 @@
+@import "../global.css"; /* import shared css */
+
+/* Page-specific styles */
+.fetch-page {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+
+/* Table-specific styles */
+.table-container {
+  margin-top: 20px;
+}
+
+.table-container table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fetch-page .message {
+  margin-top: 10px;
+}
+
+
+
+  

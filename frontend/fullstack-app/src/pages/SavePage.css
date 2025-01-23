@@ -1,0 +1,11 @@
+@import "../global.css"; /* Import shared styles */
+
+/* save page style */
+.save-page {
+    text-align: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+
+

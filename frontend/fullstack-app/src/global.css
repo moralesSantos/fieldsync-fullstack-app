@@ -1,0 +1,86 @@
+/* Button Styles */
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #a081ea;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #745fbc; 
+}
+
+
+
+
+.button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+/* Table Styles */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #a081ea;
+  color: white;
+  text-transform: uppercase;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternating row color */
+}
+
+.table tr:hover {
+  background-color: #f1e9ff; 
+}
+
+/* Message Styles */
+.message {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.message.error {
+  color: red;
+}
+
+.message.success {
+  color: green;
+}
+
+/* Page Styles */
+.page {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+  
