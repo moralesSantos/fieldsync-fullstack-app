@@ -34,10 +34,6 @@ Ensure you have the following installed:
       ```sh
       cd backend
       ```
-    - Install dependencies:
-      ```sh
-      npm install
-      ```
     - Create a `.env` file for environment variables:
       ```sh
       touch .env
@@ -55,6 +51,7 @@ Ensure you have the following installed:
       ```sh
       docker-compose up --build
       ```
+    -This will: Setup Postgres database in a container and start the node.js server(backend)
     - Verify backend is running by visiting:
       [http://localhost:4500/](http://localhost:4500/) (or the port specified in the `.env`)
 
@@ -144,10 +141,11 @@ fieldsync-fullstack-app/
 ```
 
 ### Future Updates:
-   add resources section to include db/migration setup.sql file
-   host to aws 
-   implement ci/cd for updates
+   1. add resources section to include db/migration setup.sql file
+   2. Host to aws 
+   3. implement ci/cd for seemless updates
+   4. Integrate adavanced UI feature like google maps or 3D cesium rendering
 
-I enjoyed this app even if time consuming at times. 
+I enjoyed creating this. Hope you enjoy. Have a great day! 
    
 
