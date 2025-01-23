@@ -21,16 +21,15 @@ Ensure you have the following installed:
 Setup Instuctions: 
 ---
 1. Clone the respository
-
-git clone https://github.com/moralesSantos/fieldsync-fullstack-app.git
-cd fieldsync-fullstack-app
+   - git clone https://github.com/moralesSantos/fieldsync-fullstack-app.git
+   - cd fieldsync-fullstack-app
 ---
 2. Backend Setup
-    1. Navigate to backend Folder: 
+    - Navigate to backend Folder: 
         cd backend
-    2. Install dependcies:
+    - Install dependcies:
         npm install
-    3. Create a .env file for enviorment variables;
+    - Create a .env file for enviorment variables;
         touch .env
     Add the following to .env
         POSTGRES_USER=postgres
