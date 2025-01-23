@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useUserContext } from "../UserContext";
 import "./FetchPage.css";
+// import MapComponent from "../components/MapComponent";
 
 const FetchPage = () => {
   const { users, setUsers, message, setMessage } = useUserContext();
@@ -46,7 +47,7 @@ const FetchPage = () => {
       {users.length === 0 && !loading ? (
         <p>No data available to fetch!</p>
       ) : (
-        // if users are available from db will populate after button is clicked
+        <div>
         <div className="table-container">
           <table className="table">
             <thead>
@@ -71,6 +72,12 @@ const FetchPage = () => {
               ))}
             </tbody>
           </table>
+        </div>
+            {/* <MapComponent users={users}/>  
+            :Running out of time to add here as 
+            as will update server.js,usercontext, database(table), etc
+            will instead do it on homepage with provided api
+            */}  
         </div>
       )}
     </div>

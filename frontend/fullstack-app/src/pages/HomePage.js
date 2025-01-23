@@ -1,6 +1,7 @@
 import React, {useEffect}from "react";
 import { useUserContext } from "../UserContext";
 import "./HomePage.css"
+import MapComponent from "../components/MapComponent";
 
 const HomePage = () => {
   const { users,setUsers, fetchUsers, loading, message, setMessage } = useUserContext();
@@ -49,6 +50,11 @@ const HomePage = () => {
             ))}
           </tbody>
         </table>
+      </div>
+      {/* Renders google map component with users location */}
+      <div className="map-container">
+            <MapComponent users={users}
+            />
       </div>
     </div>
   );
