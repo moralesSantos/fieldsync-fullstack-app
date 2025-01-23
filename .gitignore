@@ -1,24 +1,17 @@
-# Logs
-*.log
-npm-debug.log*
-
 # Node modules
 node_modules/
-.yarn/
-.pnp.*
 
 # Build output
-dist/
-build/
+frontend/fullstack-app/build/
+backend/node_modules/
 
-# Environment variables
-.env
-.env.local
+# Environment files
+*.env
 
-# IDE files
-.vscode/
-.idea/
+# Docker
+docker-compose.override.yml
+*.log
 
-# OS files
+# System files
 .DS_Store
-Thumbs.db
+
