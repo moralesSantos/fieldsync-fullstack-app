@@ -78,8 +78,22 @@ Ensure you have the following installed:
       ```sh
       \q
       ```
+4. Added google functionality(optional):
+    - Create google cloud project: 
+      - go to google cloud console
+      - create project
+      -give project name and click create
+    - Enable google maps api: 
+      - Navigate to API's & Services 
+      - search Maps Javascipt Api and click enable
+    - Create API_Key: 
+      - Navigate to API's & Services > Credentials
+      - Click on + create credentials and select api key
+    - Input Key on MapComponet.js where is say: insertGoogleAPI KEY HERE.
+    - (Will eventually update to include in ENV and use some sort of secret management service like AWS secrets manager:)
 
-4. Frontend Setup:
+
+5. Frontend Setup:
     - Navigate to the frontend folder:
       ```sh
       cd ../frontend/fullstack-app
@@ -95,7 +109,7 @@ Ensure you have the following installed:
     - Open in browser:
       [http://localhost:3000/](http://localhost:3000/)
 
-5. Test the Application Workflow:
+6. Test the Application Workflow:
     - **Homepage**: Click the download button to fetch user data from the API.
     - **Save Page**:
       - Navigate to save page.
@@ -104,7 +118,7 @@ Ensure you have the following installed:
       - Navigate to Fetch Page.
       - Click the fetch user button to retrieve saved data from the PostgreSQL database.
 
-6. Troubleshooting:
+7. Troubleshooting:
     - **Docker Issues**:
       - Ensure Docker Desktop is running before starting the backend.
       - If you run into trouble, use:
@@ -142,9 +156,9 @@ fieldsync-fullstack-app/
 
 ### Future Updates:
    1. add resources section to include db/migration setup.sql file
-   2. Host to aws 
+   2. Host to aws or another cloud platform
    3. implement ci/cd for seemless updates
-   4. Integrate adavanced UI feature like google maps or 3D cesium rendering
+   4. Integrate more advance features like 3D cesium rendering. 
 
 I enjoyed creating this. Hope you enjoy. Have a great day! 
    
